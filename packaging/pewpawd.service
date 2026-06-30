@@ -1,0 +1,26 @@
+[Unit]
+Description=PewPaw WhatsApp Backend Daemon
+Documentation=https://github.com/neoncorp/pewpaw
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/pewpawd
+Restart=on-failure
+RestartSec=5
+User=root
+RuntimeDirectory=pewpaw
+RuntimeDirectoryMode=0755
+StateDirectory=pewpaw
+StateDirectoryMode=0700
+
+# Security hardening
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/pewpaw /var/run/pewpaw-listener.sock
+
+[Install]
+WantedBy=multi-user.target

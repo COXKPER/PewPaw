@@ -1,0 +1,38 @@
+# Build artifacts
+frontend/build/
+backend/pewpawd
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Go
+backend/coverage.out
+backend/vendor/
+
+# C++ / Qt
+frontend/CMakeCache.txt
+frontend/CMakeFiles/
+frontend/Makefile
+frontend/cmake_install.cmake
+frontend/*.o
+frontend/*.a
+frontend/*.so
+frontend/*.dylib
+frontend/pewpaw
+
+# Database (if testing locally)
+*.db
+*.db-shm
+*.db-wal

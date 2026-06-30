@@ -36,3 +36,6 @@ frontend/pewpaw
 *.db
 *.db-shm
 *.db-wal
+
+pewpaw
+pewpawd
